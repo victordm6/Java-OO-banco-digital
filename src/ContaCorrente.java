@@ -1,5 +1,15 @@
-public class ContaCorrente {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-    }
+class ContaCorrente extends Conta {
+
+	ContaCorrente(Cliente cliente) {
+
+		super(cliente);
+	}
+
+	@Override
+	public void imprimirExtrato() {
+		
+		System.out.println("=== Extrato Conta Corrente ===");
+		super.imprimirInfosComuns();
+	}
+	
 }
